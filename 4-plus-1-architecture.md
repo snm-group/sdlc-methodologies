@@ -7,6 +7,10 @@
   - [Method 2: Detailed Breakdown (Task Slicing per Use Case)](#method-2-detailed-breakdown-task-slicing-per-use-case)
   - [Method 3: Formal Use Case Points (UCP) Method](#method-3-formal-use-case-points-ucp-method)
 
+- [Logical View](#logical-view)
+- [Process View](#process-view)
+- [Development View](#development-view)
+- [Physical View](#physical-view)
 - [Tools](#tools)
 
 ![alt text](image-1.png)
@@ -258,6 +262,32 @@ $$\text{Estimated Hours} = \text{UCP} \times 20 \text{ hours}$$
 - Output: Class, object, composite structure diagrams
 
 ### Object-oriented decomposition
+
+Method: [logical-view-method.md](./logical-view-method.md). Guide and templates: [logical-view-guide.md](./logical-view-guide.md).
+
+## Process View
+
+- Input: Use cases, logical model (entities and statuses), non-functional requirements
+- Method: Classify each step (sync, async, background), define runtime units and messages, guard concurrency, model failure and state
+- Output: Sequence diagrams, state machines, runtime unit catalog, concurrency register
+
+Method: [process-view-method.md](./process-view-method.md). Guide and templates: [process-view-guide.md](./process-view-guide.md).
+
+## Development View
+
+- Input: Use cases, logical model, runtime units from the Process view, team structure
+- Method: Group components into modules, assign layers, define dependency rules, map to deployables and owners
+- Output: Module and layer diagram, dependency rules, folder layout, ownership
+
+Method: [development-view-method.md](./development-view-method.md). Guide and templates: [development-view-guide.md](./development-view-guide.md).
+
+## Physical View
+
+- Input: Runtime units from the Process view, deliverables from the Development view, non-functional requirements, constraints
+- Method: Size the load, map runtime units to nodes, define zones and data protection, plan environments and recovery
+- Output: Deployment diagram, node catalog, environment matrix, data protection register
+
+Method: [physical-view-method.md](./physical-view-method.md). Guide and templates: [physical-view-guide.md](./physical-view-guide.md).
 
 ## Tools
 
