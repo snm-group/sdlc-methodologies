@@ -20,6 +20,7 @@ We decided to make a web application to replace the main Google SpreadSheet. The
 
 ## Methodologies
 
+- [Working with AI](./ai/index.md)
 - [Definitions](./definitions.md)
 - [Methodologies](./methodologies.md)
 - [4+1 Framework](https://software-architecture-guild.com/guide/competencies/modeling/frameworks/4-plus-1/)
